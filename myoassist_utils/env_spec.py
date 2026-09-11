@@ -151,4 +151,5 @@ class EnvSpec:
             terrain=self.terrain,
             export_path=export_path,
             cache_dir=cache_dir,
+            planar_root=True,
         )
