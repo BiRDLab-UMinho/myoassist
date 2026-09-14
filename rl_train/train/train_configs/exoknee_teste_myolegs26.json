@@ -151,32 +151,32 @@
                         [
                             {
                                 "type":"range",
-                                "range":[0,12],
-                                "comment":"12 qpos without lumbar_extension"
+                                "range":[0,14],
+                                "comment":"14 qpos without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[12,24],
-                                "comment":"12 qvel without lumbar_extension"
+                                "range":[14,28],
+                                "comment":"14 qvel without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[24,37],
+                                "range":[28,41],
                                 "comment":"13 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[37,50],
+                                "range":[41,54],
                                 "comment":"13 right muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[50,54],
+                                "range":[54,58],
                                 "comment":"4 foot force"
                             },
                             {
                                 "type":"range",
-                                "range":[54,55],
+                                "range":[58,59],
                                 "comment":"target velocity"
                             }
                         ],
@@ -202,32 +202,32 @@
                         [
                             {
                                 "type":"range",
-                                "range":[0,12],
-                                "comment":"12 qpos without lumbar_extension"
+                                "range":[0,14],
+                                "comment":"14 qpos without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[12,24],
-                                "comment":"12 qvel without lumbar_extension"
+                                "range":[14,28],
+                                "comment":"14 qvel without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[24,37],
+                                "range":[28,41],
                                 "comment":"13 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[37,50],
+                                "range":[41,54],
                                 "comment":"13 right muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[50,54],
+                                "range":[54,58],
                                 "comment":"4 foot force"
                             },
                             {
                                 "type":"range",
-                                "range":[54,55],
+                                "range":[58,59],
                                 "comment":"target velocity"
                             }
                         ],
@@ -247,32 +247,32 @@
                         [
                             {
                                 "type":"range",
-                                "range":[0,12],
-                                "comment":"12 qpos without lumbar_extension"
+                                "range":[0,14],
+                                "comment":"14 qpos without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[12,24],
-                                "comment":"12 qvel without lumbar_extension"
+                                "range":[14,28],
+                                "comment":"14 qvel without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[24,37],
+                                "range":[28,41],
                                 "comment":"13 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[37,50],
+                                "range":[41,54],
                                 "comment":"13 right muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[50,54],
+                                "range":[54,58],
                                 "comment":"4 foot force"
                             },
                             {
                                 "type":"range",
-                                "range":[54,55],
+                                "range":[58,59],
                                 "comment":"target velocity"
                             }
                         ]
