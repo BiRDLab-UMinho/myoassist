@@ -156,27 +156,27 @@
                             },
                             {
                                 "type":"range",
-                                "range":[14,28],
-                                "comment":"14 qvel without lumbar_extension"
+                                "range":[14,29],
+                                "comment":"15 qvel without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[28,41],
+                                "range":[29,42],
                                 "comment":"13 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[41,54],
+                                "range":[42,55],
                                 "comment":"13 right muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[54,58],
+                                "range":[55,59],
                                 "comment":"4 foot force"
                             },
                             {
                                 "type":"range",
-                                "range":[58,59],
+                                "range":[59,60],
                                 "comment":"target velocity"
                             }
                         ],
@@ -207,27 +207,27 @@
                             },
                             {
                                 "type":"range",
-                                "range":[14,28],
-                                "comment":"14 qvel without lumbar_extension"
+                                "range":[14,29],
+                                "comment":"15 qvel without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[28,41],
+                                "range":[29,42],
                                 "comment":"13 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[41,54],
+                                "range":[42,55],
                                 "comment":"13 right muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[54,58],
+                                "range":[55,59],
                                 "comment":"4 foot force"
                             },
                             {
                                 "type":"range",
-                                "range":[58,59],
+                                "range":[59,60],
                                 "comment":"target velocity"
                             }
                         ],
@@ -252,27 +252,27 @@
                             },
                             {
                                 "type":"range",
-                                "range":[14,28],
-                                "comment":"14 qvel without lumbar_extension"
+                                "range":[14,29],
+                                "comment":"15 qvel without lumbar_extension"
                             },
                             {
                                 "type":"range",
-                                "range":[28,41],
+                                "range":[29,42],
                                 "comment":"13 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[41,54],
+                                "range":[42,55],
                                 "comment":"13 right muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[54,58],
+                                "range":[55,59],
                                 "comment":"4 foot force"
                             },
                             {
                                 "type":"range",
-                                "range":[58,59],
+                                "range":[59,60],
                                 "comment":"target velocity"
                             }
                         ]
