@@ -5,7 +5,7 @@
             "num_timesteps": 200,
             "min_target_velocity": 0.01,
             "max_target_velocity": 0.01,
-            "target_velocity_period": 2,
+            "target_velocity_period": 100,
             "velocity_mode": "UNIFORM",
             "cam_type": "follow",
             "cam_distance": 2.5,
@@ -27,8 +27,8 @@
         
         "min_target_velocity": 0.01,
         "max_target_velocity": 0.01,
-        "min_target_velocity_period": 2,
-        "max_target_velocity_period": 10,
+        "min_target_velocity_period": 100,
+        "max_target_velocity_period": 500,
 
         "enable_lumbar_joint": false,
         "lumbar_joint_fixed_angle": -0.13,
@@ -41,7 +41,6 @@
             "pelvis_tx","pelvis_ty","pelvis_tilt"
         ],
         "observation_joint_vel_keys": [
-        
         ],
         "observation_joint_sensor_keys": [
             "r_foot", "l_foot", "r_toes", "l_toes"
