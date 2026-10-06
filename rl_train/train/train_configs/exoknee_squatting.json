@@ -21,14 +21,14 @@
         "seed": 1234,
         "safe_height": 0.7,
         "out_of_trajectory_threshold": 0.2,
-        "flag_random_ref_index": true,
+        "flag_random_ref_index": false,
         "control_framerate": 30,
         "physics_sim_framerate": 1200,
         
         "min_target_velocity": 0.01,
         "max_target_velocity": 0.01,
         "min_target_velocity_period": 100,
-        "max_target_velocity_period": 500,
+        "max_target_velocity_period": 100,
 
         "enable_lumbar_joint": false,
         "lumbar_joint_fixed_angle": -0.13,
@@ -41,9 +41,13 @@
             "pelvis_tx","pelvis_ty","pelvis_tilt"
         ],
         "observation_joint_vel_keys": [
+            "ankle_angle_l", "ankle_angle_r",
+            "hip_flexion_l", "hip_flexion_r",
+            "knee_angle_l", "knee_angle_r",
+            "pelvis_tx","pelvis_ty","pelvis_tilt"
         ],
         "observation_joint_sensor_keys": [
-            "r_foot", "l_foot", "r_toes", "l_toes"
+        		"r_foot", "l_foot", "r_toes", "l_toes"
         ],
 
         "msk_key": "myolegs22",
@@ -52,28 +56,37 @@
 
         "reward_keys_and_weights": {
             "qpos_imitation_rewards": {
-                "hip_flexion_l": 1.0,
-                "hip_flexion_r": 1.0,
+                "pelvis_ty": 0.1,
+                "pelvis_tilt": 1.0,
+                "pelvis_ty": 0.1,
+                "hip_flexion_l": 0.2,
+                "hip_flexion_r": 0.2,
                 "knee_angle_l": 1.0,
                 "knee_angle_r": 1.0,
                 "ankle_angle_l": 0.2,
-                "ankle_angle_r": 0.2,
-                "pelvis_tx": 0.2,
-                "pelvis_ty": 0.2,
-                "pelvis_tilt": 0.2
+                "ankle_angle_r": 0.2
             },
             "qvel_imitation_rewards": {
+                "pelvis_ty": 0.1,
+                "pelvis_tilt": 0.1,
+                "pelvis_ty": 0.1,
+                "hip_flexion_l": 0.2,
+                "hip_flexion_r": 0.2,
+                "knee_angle_l": 0.1,
+                "knee_angle_r": 0.1,
+                "ankle_angle_l": 0.1,
+                "ankle_angle_r": 0.1
             },
             "end_effector_imitation_reward": 0.0,
             "forward_reward": 0.0,
-            "muscle_activation_penalty": 1.0,
+            "muscle_activation_penalty": 0.0,
             "muscle_activation_diff_penalty": 0.1,
 
             "footstep_delta_time": 0.0,
             "average_velocity_per_step": 0.0,
             "muscle_activation_penalty_per_step": 0.0,
 
-            "joint_constraint_force_penalty": 0.0,
+            "joint_constraint_force_penalty": 1.0,
 
             "foot_force_penalty": 0.0
         },
@@ -87,7 +100,7 @@
         "prev_trained_policy_path": null
     },
     "ppo_params": {
-        "learning_rate": 0.00001,
+        "learning_rate": 0.0001,
         "n_steps": 2048,
         "batch_size": 8192,
         "n_epochs": 30,
@@ -123,13 +136,23 @@
                             },
                             {
                                 "type":"range",
-                                "range":[9,20],
+                                "range":[9,18],
+                                "comment":"9 qvel without lumbar_extension"
+                            },
+                            {
+                                "type":"range",
+                                "range":[18,29],
                                 "comment":"11 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[20,31],
+                                "range":[29,40],
                                 "comment":"11 right muscle activation"
+                            },
+                            {
+                                "type":"range",
+                                "range":[40,44],
+                                "comment":"4 foot force"
                             }
                         ],
                     "action":
@@ -159,13 +182,23 @@
                             },
                             {
                                 "type":"range",
-                                "range":[9,20],
+                                "range":[9,18],
+                                "comment":"9 qvel without lumbar_extension"
+                            },
+                            {
+                                "type":"range",
+                                "range":[18,29],
                                 "comment":"11 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[20,31],
+                                "range":[29,40],
                                 "comment":"11 right muscle activation"
+                            },
+                            {
+                                "type":"range",
+                                "range":[40,44],
+                                "comment":"4 foot force"
                             }
                         ],
                     "action":
@@ -189,13 +222,23 @@
                             },
                             {
                                 "type":"range",
-                                "range":[9,20],
+                                "range":[9,18],
+                                "comment":"9 qvel without lumbar_extension"
+                            },
+                            {
+                                "type":"range",
+                                "range":[18,29],
                                 "comment":"11 left muscle activation"
                             },
                             {
                                 "type":"range",
-                                "range":[20,31],
+                                "range":[29,40],
                                 "comment":"11 right muscle activation"
+                            },
+                            {
+                                "type":"range",
+                                "range":[40,44],
+                                "comment":"4 foot force"
                             }
                         ]
                 }
