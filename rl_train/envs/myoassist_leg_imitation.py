@@ -310,7 +310,8 @@ class MyoAssistLegImitation(MyoAssistLegBase):
     def setup_reference_data(self, data: dict | None):
         if data is None:
             raise ValueError("Reference data is not set")
-        self._reference_data = self._height_corrected_reference(data)
+        #self._reference_data = self._height_corrected_reference(data)
+        self._reference_data = data
         self._imitation_index = None
         self._reference_data_length = self._reference_data["metadata"]["resampled_data_length"]
 

@@ -56,9 +56,9 @@
 
         "reward_keys_and_weights": {
             "qpos_imitation_rewards": {
+                "pelvis_tx": 0.1,
                 "pelvis_ty": 0.1,
-                "pelvis_tilt": 1.0,
-                "pelvis_ty": 0.1,
+                "pelvis_tilt": 0.1,
                 "hip_flexion_l": 0.2,
                 "hip_flexion_r": 0.2,
                 "knee_angle_l": 1.0,
@@ -67,9 +67,9 @@
                 "ankle_angle_r": 0.2
             },
             "qvel_imitation_rewards": {
+                "pelvis_tx": 0.1,
                 "pelvis_ty": 0.1,
                 "pelvis_tilt": 0.1,
-                "pelvis_ty": 0.1,
                 "hip_flexion_l": 0.2,
                 "hip_flexion_r": 0.2,
                 "knee_angle_l": 0.1,
@@ -80,13 +80,13 @@
             "end_effector_imitation_reward": 0.0,
             "forward_reward": 0.0,
             "muscle_activation_penalty": 0.0,
-            "muscle_activation_diff_penalty": 0.1,
+            "muscle_activation_diff_penalty": 0.0,
 
             "footstep_delta_time": 0.0,
             "average_velocity_per_step": 0.0,
             "muscle_activation_penalty_per_step": 0.0,
 
-            "joint_constraint_force_penalty": 1.0,
+            "joint_constraint_force_penalty": 0.0,
 
             "foot_force_penalty": 0.0
         },
