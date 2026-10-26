@@ -511,6 +511,7 @@ def _compose_env_model(
     #    export file/dir can go.
     xml_str = ET.tostring(model_root, encoding="unicode")
     model_xml_path.unlink(missing_ok=True)
+
     for scratch in (model_dir, assets_dir):
         try:
             scratch.rmdir()  # only removes it if empty (e.g. no terrain assets)
