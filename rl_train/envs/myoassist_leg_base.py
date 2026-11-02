@@ -74,6 +74,11 @@ class MyoAssistLegBase(env_base.MujocoEnv):
 
         self._prev_muscle_activations_for_reward = None
 
+        ## ADDED - UNCOMMENT TO LIMIT NEW PELVIS 3D JOINTS
+        #self.sim.model.joint('pelvis_tz').limited = [1]
+        #self.sim.model.joint('pelvis_rotation').limited = [1]
+        #self.sim.model.joint('pelvis_list').limited = [1]
+
         # Device (non-muscle) actuators, and the scale that turns each one's ctrl into a
         # dimensionless effort in [0, 1]. Identified by dynamics type rather than by index so
         # this holds for any composed model, and normalised per actuator because `ctrlrange`
